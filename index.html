@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sketchpad</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <center>
         <h1>Sketchpad</h1>
+        <div class ="sizeSelector">
+            <h4>Изменить размер (по каждой стороне):</h4>
+            <input type="number" class="squareSize" value="16">
+            <button onclick="changeSize()"> Изменить размер</button>
+            <p>Изменение размера влечет за собой перезагрузку страницы</p>
+            
+        </div>
             <div class="page">
         
                 <div class="container"></div>
@@ -28,11 +38,14 @@
                     </div>
                     <button onclick="randomColor()">Случайный цвет</button>
 
-                    <h4>Выбранный цвет:</h2>
+                    <h4>Выбранный цвет:</h4>
                     <div class = "pickedColor"></div>
-            
+
                 </div>
+                             
+                
             </div>
+            
 
     </center>
     
