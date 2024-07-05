@@ -3,18 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketchpad</title>
     <link rel="stylesheet" href="style.css">
-    <title>Etch a Sketch</title>
 </head>
 <body>
     <center>
-        <h1>Etch a Sketch</h1>
-        <div class="container">
+        <h1>Sketchpad</h1>
+            <div class="page">
+        
+                <div class="container"></div>
 
+                <div class ="colorSelector">
+                    <div class = "color">
+                        <p>R: </p>
+                        <input type="range" class="red" min="0" max="255" step="1" value="0" oninput="redColor(this.value)">
+                    </div>
+                    <div class = "color">
+                        <p>G: </p>
+                        <input type="range" class="green" min="0" max="255" step="1" value="0" oninput="greenColor(this.value)">
+                    </div>
+                    <div class = "color">
+                        <p>B: </p>
+                        <input type="range" class="blue" min="0" max="255" step="1" value="0" oninput="blueColor(this.value)">
+                    </div>
+                    <button onclick="randomColor()">Случайный цвет</button>
 
-        </div>
+                    <h4>Выбранный цвет:</h2>
+                    <div class = "pickedColor"></div>
+            
+                </div>
+            </div>
+
     </center>
     
+    <script src="script.js"></script>
 </body>
-<script src="code.js"></script>
 </html>
