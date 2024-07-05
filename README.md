@@ -1,2 +1,2 @@
 # Etch-a-Sketch
-Site that allow you to draw pixels
+Site that allows you to draw pixels
